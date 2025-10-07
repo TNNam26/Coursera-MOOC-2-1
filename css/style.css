@@ -8,6 +8,8 @@ header{
 }
 nav{
     background-color: lightblue;
+    display: inline-block;
+    width: 80%;
 }
 main{
     background-color: lightgreen;
@@ -17,10 +19,10 @@ footer{
     background-color: lightpink;
     color: black;
 }
-li{
+/* li{
     display: inline-block;
-    width: 0 10px;
-}
+    width: 105px;
+} */
 h1{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
@@ -28,5 +30,41 @@ h1{
 }
 p{
     line-height: 1.5;
-
+}
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    z-index: 1000;
+    display: inline-block;
+}
+nav img{
+    width: 10%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 20px;
+}
+.grid img{
+    width: 100%;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
